@@ -1,0 +1,79 @@
+Create a web application using the following tech stack and architecture:
+Backend: Python with FastAPI, OpenCV, TensorFlow, and PyTorch
+Frontend: React.js with Three.js and React Flow
+Database: PostgreSQL for structured data and MongoDB for unstructured data
+Deployment: Docker and Kubernetes
+Real-time Processing: Apache Kafka and NVIDIA CUDA
+The application should have the following structure and features:
+Landing Page
+Create a responsive landing page with five cards representing the main modules:
+Residential Vision
+School Vision
+Hospital Vision
+Mine Site Vision
+Traffic and City Centre Vision
+Each card should be clickable and lead to its respective module dashboard.
+Vertical Navigation
+Implement a vertical navigation panel on the left side of the application with the following sections:
+Module Dashboard
+Widget Builder
+Camera Management
+Models
+Settings (including user management for access rights)
+Module Dashboard
+For each module, create a dashboard that displays various widgets, including a default "Live Camera Stream" widget. Allow users to add, remove, and rearrange widgets. Implement an expansion feature for all widgets to reveal additional controls and information.
+Expandable Widgets
+All widgets should be expandable to show more detailed controls and information. Examples include:
+Live Camera Stream Widget:
+Expanded view: Pan, Zoom, Record, Snapshot, and PTZ controls
+Multiple camera feed switching
+Adjustable frame rate and resolution settings
+Analytics Dashboard Widget:
+Expanded view: Detailed charts, graphs, and statistics
+Custom date ranges and data filtering options
+Alert Management Widget:
+Expanded view: List of all alerts with filtering and sorting options
+Custom alert threshold and notification preference settings
+Module-Specific Widgets
+Residential Vision
+Occupancy Tracking Widget
+Package Detection Widget
+Suspicious Activity Alert Widget
+School Vision
+Student Attendance Widget
+Playground Safety Monitoring Widget
+Classroom Attention Analysis Widget
+Hospital Vision
+Patient Fall Detection Widget
+Hygiene Compliance Widget
+Equipment Tracking Widget
+Mine Site Vision
+Heavy Machinery Tracking Widget
+Safety Gear Compliance Widget
+Hazardous Area Monitoring Widget
+Traffic and City Centre Vision
+Traffic Flow Analysis Widget
+Parking Occupancy Widget
+Public Safety Incident Detection Widget
+Widget Builder
+Develop a visual editor using React Flow that allows users to create custom widgets by connecting various nodes. Implement a library of pre-built nodes for common computer vision tasks. Ensure the visual editor supports the creation of expandable widgets with customizable controls and views for both collapsed and expanded states.
+Camera Management
+Create an interface for managing and configuring multiple camera streams. Include options for adding new cameras, adjusting settings, and monitoring status. Implement advanced camera configuration options such as motion detection sensitivity, night vision settings, and integration with external sensors or IoT devices.
+Models
+Implement a section for managing computer vision models. Include features for uploading, training, and deploying models using TensorFlow and PyTorch. Provide a model marketplace or library where users can browse and deploy pre-trained models specific to each module (e.g., facial recognition for security, object detection for traffic analysis).
+Settings
+Develop a comprehensive settings panel that includes:
+User management with role-based access control
+Application-wide configuration options
+Integration settings for external services
+Customizable dashboard layouts for each module
+Widget permission settings to control which user roles can access specific widgets or their expanded features
+Widget Functionality
+Ensure all widgets, including the Live Camera Stream, are built as React components. Implement WebAssembly for high-performance widget functionality where necessary. Implement smooth transitions and animations for widget expansion and collapse. Ensure that expanded widgets can be resized and repositioned within the dashboard.
+Performance Optimization
+Utilize NVIDIA CUDA for GPU acceleration of computer vision tasks. Implement efficient data streaming with Apache Kafka for real-time video processing. Implement efficient data streaming and processing to handle multiple expanded widgets simultaneously without compromising performance.
+Deployment
+Package the application using Docker and provide Kubernetes configurations for scalable deployment in both cloud and on-premises environments.
+Security
+Implement robust security measures, including encryption for data at rest and in transit, secure API endpoints, and proper authentication and authorization mechanisms. Implement granular access controls for widget features, ensuring that sensitive controls (e.g., camera PTZ) are only accessible to authorized users.
+Ensure the application is modular, scalable, and follows best practices for both frontend and backend development. Prioritize performance, user experience, and intuitive design throughout the development process. Implement responsive layouts to support various screen sizes and devices, maintaining a user-friendly interface while accommodating the expanded features for both collapsed and expanded widget states.
